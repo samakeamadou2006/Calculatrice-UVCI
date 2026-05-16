@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculatrice UVCI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="app">
+
+    <!-- EN-TÊTE -->
+    <header class="entete">
+      <div class="entete-gauche">
+        <div class="logo-box">
+          <img src="calculatrice.uvci.logo.png" alt="Logo UVCI" />
+        </div>
+        <div>
+          <h1 class="app-titre">Calculatrice UVCI</h1>
+          <p class="app-sous-titre">Suivi des moyennes </p>
+        </div>
+      </div>
+      <div class="entete-actions">
+        <button class="btn btn-secondaire" id="btn-reset">🗑 Réinitialiser</button>
+        <button class="btn btn-primaire" id="btn-pdf">📄 Exporter PDF</button>
+      </div>
+    </header>
+
+    <!-- RÉSUMÉ GLOBAL -->
+    <section class="resume-global">
+      <div class="resume-carte succes">
+        <span class="resume-icone">✅</span>
+        <span class="resume-valeur" id="total-admis">0</span>
+        <span class="resume-label">Cours admis</span>
+      </div>
+      <div class="resume-carte danger">
+        <span class="resume-icone">🔴</span>
+        <span class="resume-valeur" id="total-session">0</span>
+        <span class="resume-label">En session</span>
+      </div>
+      <div class="resume-carte">
+        <span class="resume-icone">📖</span>
+        <span class="resume-valeur" id="total-cours">0</span>
+        <span class="resume-label">Cours calculés</span>
+      </div>
+      <div class="resume-carte moyenne">
+        <span class="resume-icone">🎯</span>
+        <span class="resume-valeur" id="moyenne-generale">--</span>
+        <span class="resume-label">Moyenne générale</span>
+      </div>
+    </section>
+
+    <!-- SEMESTRES — généré par JS -->
+    <div id="semestres"></div>
+
+  </div>
+
+  <!-- MODAL CONFIRMATION RESET -->
+  <div class="modal-overlay" id="modal-reset" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-reset-titre">
+      <h3 id="modal-reset-titre">⚠️ Réinitialiser ?</h3>
+      <p>Toutes les notes seront supprimées. Cette action est irréversible.</p>
+      <div class="modal-actions">
+        <button class="btn btn-secondaire" id="btn-reset-annuler">Annuler</button>
+        <button class="btn btn-danger" id="btn-reset-confirmer">Oui, supprimer</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
