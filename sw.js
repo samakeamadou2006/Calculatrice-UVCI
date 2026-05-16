@@ -1,4 +1,4 @@
-const CACHE_VERSION = "uvci-calculatrice-v1";
+const CACHE_VERSION = "uvci-calculatrice-v2";
 
 // Fichiers indispensables au lancement rapide et au mode hors ligne.
 const APP_SHELL = [
@@ -8,7 +8,7 @@ const APP_SHELL = [
   "./script.js",
   "./pwa-install.js",
   "./manifest.json",
-  "./calculatrice.uvci.logo.png",
+  "./logo.calc.uvci.jpeg",
   "./icons/icon-192.png",
   "./icons/icon-512.png"
 ];
