@@ -1,0 +1,25 @@
+{
+  "name": "Calculatrice UVCI",
+  "short_name": "UVCI Calc",
+  "description": "Calculatrice UVCI pour suivre les moyennes, les cours admis et les cours en session.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#5b2a86",
+  "background_color": "#f7f8f5",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

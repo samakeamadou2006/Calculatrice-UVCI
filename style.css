@@ -102,6 +102,23 @@ body {
 .btn-secondaire:hover { background: var(--bordure); color: var(--texte); }
 .btn-danger { background: var(--danger); color: white; }
 .btn-danger:hover { background: #8f1c48; }
+.btn-install {
+  background: var(--succes);
+  color: white;
+  box-shadow: 0 6px 18px rgba(15, 138, 59, 0.18);
+}
+.btn-install:hover {
+  background: #0b7431;
+  transform: translateY(-1px);
+}
+.btn-install:disabled {
+  cursor: wait;
+  opacity: 0.75;
+  transform: none;
+}
+.btn-install[hidden] {
+  display: none;
+}
 
 .btn-sm {
   padding: 3px 10px;

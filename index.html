@@ -3,6 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#5b2a86" />
+  <meta name="description" content="Calculatrice UVCI pour suivre les moyennes, les cours admis et les cours en session." />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
   <title>Calculatrice UVCI</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -22,6 +29,7 @@
         </div>
       </div>
       <div class="entete-actions">
+        <button class="btn btn-install" id="btn-install-app" type="button" hidden>Installer l'application</button>
         <button class="btn btn-secondaire" id="btn-reset">🗑 Réinitialiser</button>
         <button class="btn btn-primaire" id="btn-pdf">📄 Exporter PDF</button>
       </div>
@@ -69,5 +77,6 @@
   </div>
 
   <script src="script.js"></script>
+  <script src="pwa-install.js"></script>
 </body>
 </html>
